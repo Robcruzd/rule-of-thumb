@@ -21,7 +21,7 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.tipoCard = this.tipoCards[1];
-    if(localStorage.getItem('prueba')!==null){
+    if(localStorage.getItem('prueba')===null){
       PEOPLE.forEach((element: any) => {
         element['typeVote'] = 'Disabled';
         element['voteAgain'] = false;
